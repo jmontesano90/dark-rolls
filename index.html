@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dark Rolls</h1>
+        <div class="logo">
+         <!-- <button onclick="getProbability()"><img src="https://steamuserimages-a.akamaihd.net/ugc/852720452190010614/0181452B31CD514050A9D8A6A48436CCFF6A9C79/"></button> -->
+    <img src="https://steamuserimages-a.akamaihd.net/ugc/852720452190010614/0181452B31CD514050A9D8A6A48436CCFF6A9C79/"/>
+
+    </div>
+    <div class="prob">
+    <button onclick="getProbability()">Get Probability</button>
+    </div>
+    </header>
+
+    <!-- <h2>Click Dark Sign to get rolls</h2> -->
+   <div class = "info">
+
+    <div class = "input">
+   <label for="black example">Black</label>
+    <input type="number"  name = "black" id = "black" placeholder = "0"/>
+     
+
+    <label for="blue example">Blue</label>
+    <input type="number"  name = "blue" id = "blue" placeholder = "0"/>
+  
+    
+    <label for="orange example">Orange</label>
+    <input type="number"  name = "orange" id = "orange" placeholder = "0"/> 
+
+
+    <label for="modifier example">Additional Modifier</label>
+    <input type="number" name = "modifier" id = "modifier" placeholder = "(+1, -1 etc)"/>
+ 
+    
+    <label for="desiredRoll example">Desired Roll</label>
+    <input type="number" name = "desiredRoll" id = "desiredRoll" placeholder = "Minimum roll wanted"/>
+    </div>
+  
+    <div class="results">
+    <div class="stats">Mode:</div><div class = "result mode">0</div>
+    <div class="stats">Median:</div><div class = "result median">0</div>
+    <div class="stats">Average:</div><div class = "result average">0</div>
+    <div class="stats">Variance:</div><div class = "result variance">0</div>
+    <div class="stats">% Chance:</div><div class = "result successChance">0</div>
+    </div>
+
+    </div>
+    <!-- <div class="prob">
+    
+    </div> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
