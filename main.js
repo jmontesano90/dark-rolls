@@ -133,7 +133,7 @@ function percentRoll(){
   rolls.sort(function(a, b){return a - b});
   let y = desiredRoll();
   let x = 0;
-  while (y != rolls[x] && x < rolls.length){
+  while (y < rolls[x] && x < rolls.length){
     x++;
 }
 return ((rolls.length - x) / 10);
