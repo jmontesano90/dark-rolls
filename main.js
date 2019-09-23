@@ -99,8 +99,8 @@ function updateRolls(){
 function average(){
   let averageRoll = Number(0);
   for (i = 0; i< rolls.length; i++){
-      let fuckJavaScript = Number(rolls[i]);
-      averageRoll += fuckJavaScript;
+      let anAcceptableName = Number(rolls[i]);
+      averageRoll += anAcceptableName;
   }
   console.log('average ran');
   console.log(averageRoll);
