@@ -10,51 +10,50 @@
     <header>
       <h1>Dark Rolls</h1>
         <div class="logo">
-         <!-- <button onclick="getProbability()"><img src="https://steamuserimages-a.akamaihd.net/ugc/852720452190010614/0181452B31CD514050A9D8A6A48436CCFF6A9C79/"></button> -->
-    <img src="https://steamuserimages-a.akamaihd.net/ugc/852720452190010614/0181452B31CD514050A9D8A6A48436CCFF6A9C79/"/>
-
-    </div>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/852720452190010614/0181452B31CD514050A9D8A6A48436CCFF6A9C79/" alt="dark sign"/>
+        </div>
     <div class="prob">
-    <button onclick="getProbability()">Get Probability</button>
+    <input type="image" src="https://imgur.com/fFV9HS6.png" alt="initialzie button" name="image" onclick = "getProbability()" width = "224" height = "29">
     </div>
     </header>
 
     <!-- <h2>Click Dark Sign to get rolls</h2> -->
-   <div class = "info">
+  <div class = "info">
 
     <div class = "input">
-   <label for="black example">Black</label>
+   <label for="black">Black</label>
     <input type="number"  name = "black" id = "black" placeholder = "0"/>
      
 
-    <label for="blue example">Blue</label>
+    <label for="blue">Blue</label>
     <input type="number"  name = "blue" id = "blue" placeholder = "0"/>
   
     
-    <label for="orange example">Orange</label>
+    <label for="orange">Orange</label>
     <input type="number"  name = "orange" id = "orange" placeholder = "0"/> 
 
 
-    <label for="modifier example">Additional Modifier</label>
+    <label for="modifier">Additional Modifier</label>
     <input type="number" name = "modifier" id = "modifier" placeholder = "(+1, -1 etc)"/>
  
     
-    <label for="desiredRoll example">Desired Roll</label>
+    <label for="desiredRoll">Desired Roll</label>
     <input type="number" name = "desiredRoll" id = "desiredRoll" placeholder = "Minimum roll wanted"/>
     </div>
   
     <div class="results">
-    <div class="stats">Mode:</div><div class = "result mode">0</div>
-    <div class="stats">Median:</div><div class = "result median">0</div>
-    <div class="stats">Average:</div><div class = "result average">0</div>
-    <div class="stats">Variance:</div><div class = "result variance">0</div>
-    <div class="stats">% Chance:</div><div class = "result successChance">0</div>
+    <div class="stats">Mode:<span class = "result mode">0</span></div>
+    <div class="stats">Median:<span class = "result median">0</span></div>
+    <div class="stats">Average:<span class = "result average">0</span></div>
+    <div class="stats">Variance:<span class = "result variance">0</span></div>
+    <div class="stats">Percent Chance:<span class = "result successChance">0</span></div>
     </div>
+</div>
 
+    <div class="rotatingImage">
+        <img src="https://i.imgur.com/KQ0GEyG.jpg" alt="figpic" height="454" width="605">
     </div>
-    <!-- <div class="prob">
     
-    </div> -->
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="main.js"></script>
   </body>
