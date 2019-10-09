@@ -12,14 +12,11 @@
         <div class="logo">
             <img src="https://steamuserimages-a.akamaihd.net/ugc/852720452190010614/0181452B31CD514050A9D8A6A48436CCFF6A9C79/" alt="dark sign"/>
         </div>
-    <div class="prob">
-    <input type="image" src="https://imgur.com/fFV9HS6.png" alt="initialzie button" name="image" onclick = "getProbability()" width = "224" height = "29">
-    </div>
     </header>
 
     <!-- <h2>Click Dark Sign to get rolls</h2> -->
-  <div class = "info">
-
+ <div class ="middleScreen">
+    <div class = "info">
     <div class = "input">
    <label for="black">Black</label>
     <input type="number"  name = "black" id = "black" placeholder = "0"/>
@@ -39,7 +36,11 @@
     
     <label for="desiredRoll">Desired Roll</label>
     <input type="number" name = "desiredRoll" id = "desiredRoll" placeholder = "Minimum roll wanted"/>
-    </div>
+
+    <div class="prob">
+      <input type="image" src="https://imgur.com/fFV9HS6.png" alt="initialzie button" name="image" onclick = "getProbability()" width = "224" height = "29">
+      </div>
+  </div>
   
     <div class="results">
     <div class="stats">Mode:<span class = "result mode">0</span></div>
@@ -53,7 +54,7 @@
     <div class="rotatingImage">
         <img src="https://i.imgur.com/KQ0GEyG.jpg" alt="figpic" height="454" width="605">
     </div>
-    
+ </div>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="main.js"></script>
   </body>
