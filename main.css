@@ -1,6 +1,6 @@
 body{
   background-color: rgba(0, 0, 0, 0.928);
-  color: gray;
+  color: white;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,13 +14,14 @@ header{
 
 .logo > img{
   width: 200px;
-  border: 2px rgba(221, 221, 221, 0.137) solid;
+  /* border: 2px rgba(221, 221, 221, 0.137) solid; */
 }
 .info{
   height:260px;
   width: 300px;
   border: solid 2px rgba(255, 255, 255, 0.233);
-  background-color: rgba(236, 236, 236, 0.007);
+  border-radius: 8px;
+  background-color: rgba(236, 236, 236, 0.027);
   margin-left: auto;
   margin-right: auto;
   display:flex;
@@ -29,6 +30,8 @@ header{
   margin-top: 9px;
 }
 .input{
+  margin-top: 8px;
+  color: white;
   height: 150px;
   width: 65px;
   display: flex;
@@ -52,6 +55,8 @@ header{
   align-items: flex-end;
   flex-direction: column;
   margin-top: 5px;
+  font-size: 18px;
+  color: white;
 }
 
 .result{
@@ -59,12 +64,13 @@ header{
   margin-right: auto;
   margin-left: auto;
   border: 2px rgba(221, 221, 221, 0.137) solid;
+  border-radius: 4px;
   width: 64px;
 }
 
 .stats{
   margin-bottom: 12px;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 /* .middleScreen{
@@ -76,6 +82,7 @@ header{
   display: none;
 }
 .prob{
+  margin-top: 10px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
