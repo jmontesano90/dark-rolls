@@ -10,7 +10,7 @@
     <header>
       <h1>Dark Rolls</h1>
         <div class="logo">
-            <img src="https://steamuserimages-a.akamaihd.net/ugc/852720452190010614/0181452B31CD514050A9D8A6A48436CCFF6A9C79/" alt="dark sign"/>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/852720452190010614/0181452B31CD514050A9D8A6A48436CCFF6A9C79/" onclick = "getProbability()" alt="dark sign"/>
         </div>
     </header>
 
@@ -18,24 +18,24 @@
  <!-- <div class ="middleScreen"> -->
     <div class = "info">
     <div class = "input">
-   <label for="black">Black</label>
-    <input type="number"  name = "black" id = "black" placeholder = "0"/>
+   <label for="black" class="black">Black</label>
+    <input type="text"  name = "black" id = "black" placeholder = "0"/>
      
 
-    <label for="blue">Blue</label>
-    <input type="number"  name = "blue" id = "blue" placeholder = "0"/>
+    <label for="blue" class ="blue">Blue</label>
+    <input type="text"  name = "blue" id = "blue" placeholder = "0"/>
   
     
-    <label for="orange">Orange</label>
-    <input type="number"  name = "orange" id = "orange" placeholder = "0"/> 
+    <label for="orange" class = "orange">Orange</label>
+    <input type="text"  name = "orange" id = "orange" placeholder = "0"/> 
 
 
     <label for="modifier">Modifier</label>
-    <input type="number" name = "modifier" id = "modifier" placeholder = "(+1, -1)"/>
+    <input type="text" name = "modifier" id = "modifier" placeholder = "(+1, -1)"/>
  
     
     <label for="desiredRoll">Desired Roll</label>
-    <input type="number" name = "desiredRoll" id = "desiredRoll" placeholder = "1"/>
+    <input type="text" name = "desiredRoll" id = "desiredRoll" placeholder = "1"/>
 
    
   </div>

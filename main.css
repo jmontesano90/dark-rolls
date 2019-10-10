@@ -38,6 +38,19 @@ header{
   flex-direction: column;
 }
 
+.black{
+  color: rgb(151, 149, 149);
+}
+
+.blue{
+  color:rgb(128, 128, 204);
+}
+
+.orange{
+  color: orange;
+}
+
+
 #orange{
   margin-bottom: 5px;
 }
@@ -69,7 +82,7 @@ header{
 }
 
 .stats{
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   margin-top: 12px;
 }
 
