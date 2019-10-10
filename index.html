@@ -15,7 +15,7 @@
     </header>
 
     <!-- <h2>Click Dark Sign to get rolls</h2> -->
- <div class ="middleScreen">
+ <!-- <div class ="middleScreen"> -->
     <div class = "info">
     <div class = "input">
    <label for="black">Black</label>
@@ -30,31 +30,36 @@
     <input type="number"  name = "orange" id = "orange" placeholder = "0"/> 
 
 
-    <label for="modifier">Additional Modifier</label>
-    <input type="number" name = "modifier" id = "modifier" placeholder = "(+1, -1 etc)"/>
+    <label for="modifier">Modifier</label>
+    <input type="number" name = "modifier" id = "modifier" placeholder = "(+1, -1)"/>
  
     
     <label for="desiredRoll">Desired Roll</label>
-    <input type="number" name = "desiredRoll" id = "desiredRoll" placeholder = "Minimum roll wanted"/>
+    <input type="number" name = "desiredRoll" id = "desiredRoll" placeholder = "1"/>
 
-    <div class="prob">
-      <input type="image" src="https://imgur.com/fFV9HS6.png" alt="initialzie button" name="image" onclick = "getProbability()" width = "224" height = "29">
-      </div>
+   
   </div>
   
+  
+
     <div class="results">
     <div class="stats">Mode:<span class = "result mode">0</span></div>
     <div class="stats">Median:<span class = "result median">0</span></div>
     <div class="stats">Average:<span class = "result average">0</span></div>
     <div class="stats">Variance:<span class = "result variance">0</span></div>
-    <div class="stats">Percent Chance:<span class = "result successChance">0</span></div>
+    <div class="stats">% Chance:<span class = "result successChance">0</span></div>
     </div>
-</div>
 
-    <div class="rotatingImage">
+    
+</div>
+<div class="prob">
+  <input type="image" src="https://imgur.com/fFV9HS6.png" alt="initialzie button" name="image" onclick = "getProbability()" width = "224" height = "29">
+  </div>
+
+    <!-- <div class="rotatingImage">
         <img src="https://i.imgur.com/KQ0GEyG.jpg" alt="figpic" height="454" width="605">
-    </div>
- </div>
+    </div> -->
+ <!-- </div> -->
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="main.js"></script>
   </body>
