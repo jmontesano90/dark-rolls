@@ -15,18 +15,19 @@
     </header>
 
     <!-- <h2>Click Dark Sign to get rolls</h2> -->
- <!-- <div class ="middleScreen"> -->
-    <div class = "info">
+ <div class ="middleScreen">
+  <div class = "functionalParts">  
+  <div class = "info">
     <div class = "input">
    <label for="black" class="black">Black</label>
     <input type="text"  name = "black" id = "black" placeholder = "0"/>
      
 
-    <label for="blue" class ="blue">Blue</label>
+    <label for="blue" class ="blue color">Blue</label>
     <input type="text"  name = "blue" id = "blue" placeholder = "0"/>
   
     
-    <label for="orange" class = "orange">Orange</label>
+    <label for="orange" class = "orange color">Orange</label>
     <input type="text"  name = "orange" id = "orange" placeholder = "0"/> 
 
 
@@ -35,7 +36,7 @@
  
     
     <label for="desiredRoll">Desired Roll</label>
-    <input type="text" name = "desiredRoll" id = "desiredRoll" placeholder = "1"/>
+    <input type="text" name = "desiredRoll" id = "desiredRoll" placeholder = "0"/>
 
    
   </div>
@@ -55,11 +56,10 @@
 <div class="prob">
   <input type="image" src="https://imgur.com/fFV9HS6.png" alt="initialzie button" name="image" onclick = "getProbability()" width = "224" height = "29">
   </div>
-
-    <!-- <div class="rotatingImage">
-        <img src="https://i.imgur.com/KQ0GEyG.jpg" alt="figpic" height="454" width="605">
-    </div> -->
- <!-- </div> -->
+  </div>
+        <img src="https://i.imgur.com/KQ0GEyG.jpg" class="rotatingImage" alt="figpic" height="454" width="605">
+</div> 
+ 
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="main.js"></script>
   </body>
