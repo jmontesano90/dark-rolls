@@ -2,6 +2,7 @@ const blackDice = [0, 1, 1, 1, 2 ,2];
 const blueDice = [1, 1, 2, 2, 2, 3];
 const orangeDice = [1, 2, 2, 3, 3, 4];
 
+
 function diceRoll() {
   let dice = ((Math.random() * 6)-.5);
   dice = Math.round(dice);
@@ -166,6 +167,16 @@ function mode(){
 }
 
 
+const displayImages = ["https://imgur.com/FAMpK9V.jpg","https://i.imgur.com/KQ0GEyG.jpg", "https://imgur.com/OOpfGtC.png", "https://imgur.com/pHmmq1f.png"];
+
+function randomImage(){
+  let image = (Math.random() * displayImages.length-.5);
+  image = Math.round(image);
+  console.log(image);
+  document.getElementById("rotatingImage").src = (displayImages[image]);
+}
+
+
 
 function getProbability(){
   $(updateRollCount());
@@ -184,5 +195,6 @@ function getProbability(){
   // console.log('Percent of success: '+ percentRoll() + '%');
 }
 
+$(randomImage());
 
 
