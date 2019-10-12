@@ -202,34 +202,48 @@ var span = document.getElementsByClassName("close")[0];
 
 
 const navContents= ({
-  what: "this is the what contents",
+  what: "Thank you for using Dark Rolls! Dark Rolls is meant to be used in conjunction with the Dark Souls board game.  Lets say you can't decide what gear you should upgrade for, or you need to decide who should attack and who should back off, the warrior or the assassin.  It can be hard to say what the best option is, is 3 blacks and a -1 modifier better than a blue and a +1?  I hope this site proves useful in your travels, best of luck Ashen Ones.",
   how: "this is the how contents",
-  houseRules: "these are the house rules"
+  houseRules: "coming soon"
 });
+
+function generateWhatElement(){ 
+  return `
+      <div class="title">Thank you for using Dark Rolls!</div><br>
+      <div class="content">Dark Rolls is meant to be used in conjunction with the Dark Souls board game.  Lets say you can't decide what gear you should upgrade for, or you need to decide who should attack and who should back off. Is 3 blacks and a -1 modifier better than a blue and a +1?  I hope this site helps answer those on the fly questions, best of luck Ashen Ones!</div><br>
+      <div class="content">Dark Rolls also works great on mobile, and was designed with mobile in mind.  I assumed most people won't drag their PC to their board game sessions, but hey whatever works.</div>
+  `
+}
+function generateHowElement(){
+  return`
+      <div class="title">How does this work?</div><br>
+      <div class="content">Dark Rolls simulates 1000 rolls based on the amount of die you entered, and your preferred minimum roll.  Then based on those rolls, will give you the accompanying statistics.  This does lead to a natural variation in every time you click the button and I could have made it so just does the math but thats boring. </div>
+  `
+}
 
 function openPopUp(){
   modal.style.display = "block";
   let itemClicked = $(event.currentTarget).attr('id');
 
   if (itemClicked == "what"){
-    $(".modal-content").text(navContents.what);
+    $(".modal-content").html(generateWhatElement());
   }
   else if (itemClicked == "how"){
-    $(".modal-content").text(navContents.how);
+    $(".modal-content").html(generateHowElement());
   }
-  else {
+  else if (itemClicked == "houseRules") {
     $(".modal-content").text(navContents.houseRules);
   }
   console.log(navContents.how);
   console.log(itemClicked);
 }
 
-// When the user clicks on <span> (x), close the modal
+
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
