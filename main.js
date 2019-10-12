@@ -177,7 +177,6 @@ function randomImage(){
 }
 
 
-
 function getProbability(){
   $(updateRollCount());
   $(updateRolls());
@@ -198,3 +197,41 @@ function getProbability(){
 $(randomImage());
 
 
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+
+const navContents= ({
+  what: "this is the what contents",
+  how: "this is the how contents",
+  houseRules: "these are the house rules"
+});
+
+function openPopUp(){
+  modal.style.display = "block";
+  let itemClicked = $(event.currentTarget).attr('id');
+
+  if (itemClicked == "what"){
+    $(".modal-content").text(navContents.what);
+  }
+  else if (itemClicked == "how"){
+    $(".modal-content").text(navContents.how);
+  }
+  else {
+    $(".modal-content").text(navContents.houseRules);
+  }
+  console.log(navContents.how);
+  console.log(itemClicked);
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
