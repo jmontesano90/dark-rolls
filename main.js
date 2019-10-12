@@ -167,7 +167,7 @@ function mode(){
 }
 
 
-const displayImages = ["https://imgur.com/FAMpK9V.jpg","https://i.imgur.com/KQ0GEyG.jpg", "https://imgur.com/OOpfGtC.png", "https://imgur.com/pHmmq1f.png"];
+const displayImages = ["https://imgur.com/FAMpK9V.jpg","https://i.imgur.com/KQ0GEyG.jpg", "https://imgur.com/OOpfGtC.png", "https://imgur.com/pHmmq1f.png", "https://imgur.com/gxoIrPl.png","https://imgur.com/jCqa32G.png", "https://imgur.com/Qu03f4u.png"];
 
 function randomImage(){
   let image = (Math.random() * displayImages.length-.5);
