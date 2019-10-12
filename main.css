@@ -97,6 +97,15 @@ header{
 .rotatingImage{
   display: none;
 }
+
+.modal{
+  display:none;
+}
+
+.contact-info{
+  display: none;
+}
+
 .prob{
   margin-top: 10px;
   display: flex;
@@ -119,6 +128,9 @@ ul{
   }
 
   .popUp{
+    display:none;
+  }
+  .modal{
     display:none;
   }
 
