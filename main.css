@@ -110,7 +110,7 @@ header{
 .contact-info{
   position: fixed;
   right:5px;
-  top: 5px;
+  top: 600px;
   border: 2px rgba(221, 221, 221, 0.192) solid;
   border-radius: 5px;
   background-color: rgba(236, 236, 236, 0.041);
@@ -163,6 +163,7 @@ ul{
     border-radius: 4px;
     background-color: rgba(236, 236, 236, 0.027);
     transition: transform .2s;
+    cursor: pointer;
   }
 
   .rotatingImage:hover {
@@ -233,6 +234,15 @@ ul{
   opacity: 1;
 }
 
+.popUpTitle{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popUpContent{
+  font-size:20px;
+  color: rgba(255, 255, 255, 0.932);
+}
 
 .close {
   color: #aaa;

@@ -169,10 +169,21 @@ function mode(){
 
 const displayImages = ["https://imgur.com/FAMpK9V.jpg","https://i.imgur.com/KQ0GEyG.jpg", "https://imgur.com/OOpfGtC.png", "https://imgur.com/pHmmq1f.png", "https://imgur.com/gxoIrPl.png","https://imgur.com/jCqa32G.png", "https://imgur.com/Qu03f4u.png"];
 
+let image = (Math.random() * displayImages.length-.5);
+image = Math.round(image);
+
 function randomImage(){
-  let image = (Math.random() * displayImages.length-.5);
-  image = Math.round(image);
   console.log(image);
+  document.getElementById("rotatingImage").src = (displayImages[image]);
+}
+
+function nextImage(){
+  if (image == displayImages.length -1){
+    image = 0;
+  }
+  else{
+    image ++;
+  }
   document.getElementById("rotatingImage").src = (displayImages[image]);
 }
 
@@ -204,20 +215,20 @@ var span = document.getElementsByClassName("close")[0];
 const navContents= ({
   what: "Thank you for using Dark Rolls! Dark Rolls is meant to be used in conjunction with the Dark Souls board game.  Lets say you can't decide what gear you should upgrade for, or you need to decide who should attack and who should back off, the warrior or the assassin.  It can be hard to say what the best option is, is 3 blacks and a -1 modifier better than a blue and a +1?  I hope this site proves useful in your travels, best of luck Ashen Ones.",
   how: "this is the how contents",
-  houseRules: "coming soon"
+  houseRules: "coming soon™"
 });
 
 function generateWhatElement(){ 
   return `
-      <div class="title">Thank you for using Dark Rolls!</div><br>
-      <div class="content">Dark Rolls is meant to be used in conjunction with the Dark Souls board game.  Lets say you can't decide what gear you should upgrade for, or you need to decide who should attack and who should back off. Is 3 blacks and a -1 modifier better than a blue and a +1?  I hope this site helps answer those on the fly questions, best of luck Ashen Ones!</div><br>
-      <div class="content">Dark Rolls also works great on mobile, and was designed with mobile in mind.  I assumed most people won't drag their PC to their board game sessions, but hey whatever works.</div>
+      <div class="popUpTitle">Thank you for using Dark Rolls!</div><br>
+      <div class="popUpContent">-Dark Rolls is meant to be used in conjunction with the Dark Souls board game.  Lets say you can't decide what gear you should upgrade for, or you need to decide who should attack and who should back off. Is 3 blacks and a -1 modifier better than a blue and a +1?  I hope this site helps answer those on the fly questions, best of luck Ashen Ones!</div><br>
+      <div class="popUpContent">-Dark Rolls also works on mobile.  I assumed most people wouldn't drag their PC to their board game sessions, but hey whatever works.</div>
   `
 }
 function generateHowElement(){
   return`
-      <div class="title">How does this work?</div><br>
-      <div class="content">Dark Rolls simulates 1000 rolls based on the amount of die you entered, and your preferred minimum roll.  Then based on those rolls, will give you the accompanying statistics.  This does lead to a natural variation in every time you click the button and I could have made it so just does the math but thats boring. </div>
+      <div class="popUpTitle">How does this work?</div><br>
+      <div class="popUpContent">-Dark Rolls simulates 1000 rolls based on the amount of die you entered, and your preferred minimum roll.  Then based on those rolls, will give you the accompanying statistics.  This does lead to a natural variation in every time you click the button, so theres no need to panic when you witness this.  Could I just have used math to calculate the stats?  Yeah but thats boring. </div>
   `
 }
 
