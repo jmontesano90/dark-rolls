@@ -79,8 +79,8 @@ function simulateRolls(){
 
 function runFiftyRolls(){
   let cumulativeRolls = [];
-  for (i = 0; i < 1000; i ++){
-      if (cumulativeRolls.length >= 1000){
+  for (i = 0; i < 5000; i ++){
+      if (cumulativeRolls.length >= 5000){
         break;
       }
       cumulativeRolls.push(simulateRolls());
@@ -137,7 +137,7 @@ function percentRoll(){
   while (y != rolls[x] && x < rolls.length){
     x++;
 }
-return ((rolls.length - x) / 10);
+return ((rolls.length - x) / 50);
 }
 
 
@@ -228,7 +228,7 @@ function generateWhatElement(){
 function generateHowElement(){
   return`
       <div class="popUpTitle">How does this work?</div><br>
-      <div class="popUpContent">-Dark Rolls simulates 1000 rolls based on the amount of die you entered, and your preferred minimum roll.  Then based on those rolls, will give you the accompanying statistics.  This does lead to a natural variation in every time you click the button, so theres no need to panic when you witness this.  Could I just have used math to calculate the stats?  Yeah but thats boring. </div>
+      <div class="popUpContent">-Dark Rolls simulates 5000 rolls based on the amount of die you entered, and your preferred minimum roll.  Then based on those rolls, will give you the accompanying statistics.  This does lead to a natural variation in every time you click the button, so theres no need to panic when you witness this.  Could I just have used math to calculate the stats?  Yeah but thats boring. </div>
   `
 }
 
